@@ -70,27 +70,6 @@ const dashboard = async () => {
     return { readings: handleResponse(locations)(recordings)};
 };
 
-// const dashboard = () => {
-//     return docClient.query(params, (err, data) => {
-//         if (err) console.log('error:', err);
-//         return data.Items.map(item => {
-//             const deviceId = item.data;
-//             return docClient.query(secondParams(deviceId), (err, res) => {
-//                 const response = { 
-//                     ...res.Items['0'], 
-//                     location: { 
-//                         id: item.PK,
-//                         name: item.name, 
-//                         deviceId: item.data
-//                     }};
-//                 if (err) console.log('err:', err)
-//                 else console.log(response);
-//                 return { readings: response };
-//             });
-//         });
-//     });
-// };
-
 module.exports = {
     dashboard,
 }

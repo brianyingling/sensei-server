@@ -7,7 +7,7 @@ const resolvers = {
             return find(authors, { id: args.id });
         },
         books: () => books,
-        dashboard: async () => await dashboard()
+        dashboard
     },
     Author: {
         books(author) {

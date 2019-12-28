@@ -1,4 +1,4 @@
-const { find, pick } = require('lodash');
+const { find } = require('lodash');
 const { parseLocation, parseReading } = require('../utils');
 const { getLocations, getReadingsByDeviceId } = require('../../db/queries');
 

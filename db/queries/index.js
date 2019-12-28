@@ -33,7 +33,8 @@ const getReadingsByDeviceId = (id) => {
             ':data': id,
             ':date': FIFTEEN_MINUTES_AGO
         }
-    }).promise()
+    })
+    .promise()
 }
 
 module.exports = {
